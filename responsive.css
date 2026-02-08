@@ -1,0 +1,650 @@
+/* Tablet Devices (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .qr-container,
+    .scanner-simulation,
+    .admin-scanner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .events-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    /* Tablet Navigation */
+    .nav-container {
+        padding: 0 1.5rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 3rem 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    /* Events Section */
+    .events-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+
+    /* Dashboard */
+    .dashboard-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .cart-card {
+        grid-column: span 1;
+    }
+
+    /* Modal Adjustments */
+    .modal-content {
+        padding: 2rem;
+        margin: 1rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+
+    /* Admin Panel Improvements */
+    .admin-panel {
+        max-height: 85vh;
+        padding-right: 5px;
+    }
+
+    .admin-section {
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .analytics-dashboard {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    /* Quick Stats */
+    .quick-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* Mobile Devices (480px - 768px) */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    .nav-links a {
+        padding: 0.4rem 0.7rem;
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        width: 100%;
+        max-width: 300px;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .quick-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+
+    .stat-card {
+        padding: 1.2rem;
+    }
+
+    .advanced-search {
+        padding: 1.5rem;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar input,
+    .search-bar button {
+        width: 100%;
+    }
+
+    .search-filters {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .search-filters select,
+    .search-filters input {
+        width: 100%;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .events-list .event-card {
+        flex-direction: column;
+    }
+
+    .events-list .event-image {
+        width: 100%;
+        height: 200px;
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-scanner {
+        grid-template-columns: 1fr;
+    }
+
+    .analytics-dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .user-controls {
+        flex-direction: column;
+    }
+
+    .qr-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .qr-input, .qr-output {
+        padding: 1.5rem;
+    }
+
+    .qr-actions {
+        flex-direction: column;
+    }
+
+    .qr-actions button {
+        width: 100%;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+    }
+
+    .profile-actions button {
+        width: 100%;
+    }
+
+    .modal-content {
+        padding: 1.5rem;
+        width: 95%;
+        margin: 0.5rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer-logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        height: 60px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .campuses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Auth Modal Fixes */
+    .auth-tabs {
+        flex-direction: column;
+    }
+
+    .tab-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Event Card Mobile Optimizations */
+    .event-card {
+        margin: 0.5rem;
+    }
+
+    .event-content {
+        padding: 1.2rem;
+    }
+
+    .event-title {
+        font-size: 1.2rem;
+    }
+
+    .event-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+
+    .event-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .event-actions button {
+        width: 100%;
+    }
+
+    /* Admin Panel Mobile Optimizations */
+    .admin-panel {
+        max-height: 80vh;
+    }
+
+    .admin-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+
+    .attendance-controls {
+        flex-direction: column;
+    }
+
+    .attendance-controls select,
+    .attendance-controls button {
+        width: 100%;
+    }
+
+    /* Dashboard Mobile Optimizations */
+    .dashboard-card {
+        padding: 1.5rem;
+    }
+
+    .dashboard-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .cart-actions {
+        flex-direction: column;
+    }
+
+    .cart-actions button {
+        width: 100%;
+    }
+
+    /* Scanner Mobile Optimizations */
+    .scanner-box {
+        padding: 1.5rem;
+    }
+
+    .scanner-light {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Small Mobile Devices (below 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 0.5rem;
+    }
+
+    .nav-links a {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .hero h2 {
+        font-size: 1.7rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin: 3rem 0 1.5rem;
+    }
+
+    .quick-stats {
+        margin: 1.5rem 0;
+    }
+
+    .stat-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .advanced-search {
+        padding: 1rem;
+    }
+
+    .events-header {
+        padding: 0.8rem 1rem;
+    }
+
+    .sort-controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+
+    .sort-controls select {
+        width: 100%;
+    }
+
+    .event-card {
+        margin: 0;
+        border-radius: 8px;
+    }
+
+    .qr-input, .qr-output {
+        padding: 1rem;
+    }
+
+    .input-group input,
+    .input-group select {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    .modal-content {
+        padding: 1rem;
+        margin: 0.25rem;
+    }
+
+    .auth-tabs {
+        margin-bottom: 1rem;
+    }
+
+    .tab-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .admin-panel {
+        max-height: 75vh;
+    }
+
+    .admin-section {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .admin-form {
+        padding: 1rem;
+    }
+
+    .events-list-admin,
+    .users-list-admin,
+    .attendance-data {
+        max-height: 200px;
+    }
+
+    .footer {
+        padding: 2rem 1rem 1.5rem;
+    }
+
+    .footer-logo img {
+        height: 50px;
+    }
+
+    .footer-info p {
+        font-size: 0.85rem;
+    }
+
+    /* Button adjustments for touch */
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.8rem 1.5rem;
+        min-height: 44px; /* Minimum touch target size */
+    }
+
+    /* Input field touch optimization */
+    input, select, textarea, button {
+        font-size: 16px; /* Prevents iOS zoom on focus */
+        min-height: 44px;
+    }
+
+    /* Improve tap targets */
+    .nav-links a,
+    .tab-btn,
+    .page-btn,
+    .view-btn {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Event actions on mobile */
+    .event-actions button {
+        min-height: 44px;
+    }
+
+    /* Dashboard cards spacing */
+    .dashboard-container {
+        gap: 1rem;
+    }
+
+    .dashboard-card {
+        padding: 1rem;
+    }
+
+    /* Hide decorative elements on very small screens */
+    .hero::before {
+        background-size: auto 100px;
+    }
+
+    /* Optimize text sizes for readability */
+    .event-description,
+    .campus-card p,
+    .profile-details p,
+    .note,
+    .footer-bottom p {
+        font-size: 0.85rem;
+    }
+
+    /* QR display optimization */
+    .qr-code-container {
+        padding: 1rem;
+        min-height: 180px;
+    }
+
+    /* Scanner optimization */
+    .scanner-box p {
+        font-size: 1rem;
+    }
+
+    .scanner-box input {
+        padding: 0.7rem;
+    }
+
+    /* Registration items optimization */
+    .registration-item,
+    .attendance-record,
+    .cart-item {
+        padding: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Pagination optimization */
+    .pagination-controls {
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+
+    .page-btn {
+        padding: 0.4rem 0.8rem;
+        min-width: 36px;
+    }
+}
+
+/* Landscape Mobile Optimization */
+@media (max-height: 600px) and (orientation: landscape) {
+    .modal-content {
+        max-height: 90vh;
+    }
+
+    .admin-panel {
+        max-height: 70vh;
+    }
+
+    .events-list-admin,
+    .users-list-admin,
+    .attendance-data {
+        max-height: 150px;
+    }
+
+    .hero {
+        padding: 1.5rem;
+        min-height: auto;
+    }
+
+    .dashboard-card {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+}
+
+/* High-resolution mobile devices */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .events-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .dashboard-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cart-card {
+        grid-column: span 2;
+    }
+
+    .analytics-dashboard {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Print styles for mobile */
+@media print {
+    .navbar,
+    .footer,
+    .filters,
+    .search-container,
+    .events-header,
+    .hero-buttons,
+    .quick-stats,
+    button,
+    .view-controls,
+    .sort-controls,
+    .advanced-search,
+    .nav-links {
+        display: none !important;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .event-card {
+        break-inside: avoid;
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+        margin-bottom: 1rem;
+    }
+
+    .hero {
+        background: none !important;
+        color: black !important;
+        padding: 1rem !important;
+    }
+
+    .qr-code-container {
+        border: 1px solid #000 !important;
+    }
+}
